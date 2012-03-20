@@ -5,4 +5,4 @@ produce inline PDF files via normal Rails views using prawn library.
 Check the test/dummy Rails app for some examples.
 
 
-MIT-LICENSE. by rtsinani
+MIT Licence. rtsinani
