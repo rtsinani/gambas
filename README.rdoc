@@ -1,3 +1,8 @@
 = Gambas
 
-This project rocks and uses MIT-LICENSE.
+produce inline PDF files via normal Rails views using prawn library.
+
+Check the test/dummy Rails app for some examples.
+
+
+This project uses MIT-LICENSE.
