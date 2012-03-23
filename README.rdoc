@@ -1,8 +1,8 @@
 = Gambas
 
-produce inline PDF files via normal Rails views using prawn library.
+Produces inline PDF files via normal Rails views using the prawn library.
 
-Check the test/dummy Rails app for some examples.
+Check the test/dummy Rails app for examples.
 
 
 MIT Licence. rtsinani
