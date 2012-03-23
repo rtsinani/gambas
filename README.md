@@ -10,12 +10,13 @@ Install
 
 ```shell
 gem install gambas
+```
 
 or add to your Gemfile
 
 ```shell
 gem 'gambas'
-
+```
 
 Usage
 ==========
@@ -25,6 +26,6 @@ In the index view add a branch to your respond_to block
 
 ```shell
 format.pdf { render :pdf => :contents }
-
+```
 
 MIT Licence. rtsinani
