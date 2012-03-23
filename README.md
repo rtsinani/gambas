@@ -1,12 +1,10 @@
-= Gambas
 
-Produces inline PDF files via normal Rails view templates using the prawn library.
+Gambas produces inline PDF files via normal Rails view templates using the prawn library.
 
 Check the test/dummy Rails app for examples.
 
 
-Install
-==========
+### Installation
 
 ```shell
 gem install gambas
@@ -18,8 +16,7 @@ or add to your Gemfile
 gem 'gambas'
 ```
 
-Usage
-==========
+### Usage
 
 Create a view template e.g. `index.pdf.prawn`. In the view you can use the `pdf` object to create the PDF document:
 
@@ -36,4 +33,6 @@ In the index view add a branch to your `respond_to` block
 format.pdf { render :pdf => :contents }
 ```
 
-MIT Licence. rtsinani
+
+---
+Copyright &copy; 2012 Artan Sinani
