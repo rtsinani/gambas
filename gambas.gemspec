@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Gambas::VERSION
   s.authors     = ["rtsinani"]
   s.email       = ["artisinani@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/rtsinani/gambas"
   s.summary     = "Inline PDF templates that use prawn."
   s.description = ""
 
