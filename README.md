@@ -34,6 +34,15 @@ format.pdf { render :pdf => :contents }
 ```
 
 
+### Configuration
+
+You can configure the defaults of the `PDF::Document` by specifying a hash in your `config/[environment].rb` files:
+
+```ruby
+config.gambas_options = { :page_size => "TABLOID" }
+```
+
+
 ---
 
 Copyright &copy; 2012 Artan Sinani
