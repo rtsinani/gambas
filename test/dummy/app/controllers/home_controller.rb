@@ -1,8 +1,6 @@
 class HomeController < ApplicationController
   def index
     respond_to do |format|
-      # render :text => params.to_s
-      # return
       format.html
       format.pdf { render_pdf }
     end
@@ -21,6 +19,10 @@ class HomeController < ApplicationController
       ] 
     ]
     render_pdf
+  end
+  
+  def page_size
+    @custom_size = [275, 326]
   end
   
   def render_pdf
