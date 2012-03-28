@@ -1,5 +1,5 @@
 
-Gambas produces inline PDF files via normal Rails view templates using the prawn library. Use the `pdf` instance of `Prawn::Document` in the views to build your PDFs with the `Prawn` DSL.
+Gambas produces inline PDF files via normal Rails view templates using the prawn library. Use the pdf instance of `Prawn::Document` in the views to build your PDFs with the prawn's DSL.
 
 Check the test/dummy Rails app for examples.
 
@@ -36,7 +36,7 @@ format.pdf { render :pdf => :contents }
 
 ### Configuration
 
-You can configure the defaults of the `PDF::Document` by specifying a hash in your `config/[environment].rb` files:
+You can configure the defaults of the `Prawn::Document` by specifying a hash in your `config/[environment].rb` files:
 
 ```ruby
 config.gambas_options = { :page_size => "TABLOID" }
