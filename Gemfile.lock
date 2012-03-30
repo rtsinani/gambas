@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    gambas (0.0.1)
+    gambas (0.0.3)
       prawn
-      rails (~> 3.2.2)
+      rails (~> 3.0)
 
 GEM
   remote: http://rubygems.org/

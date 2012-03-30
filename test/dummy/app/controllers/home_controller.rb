@@ -2,7 +2,21 @@ class HomeController < ApplicationController
   def index
     respond_to do |format|
       format.html
-      format.pdf { render_pdf }
+      format.pdf do 
+        render :pdf => :contents, :pdf_options => { 
+          :page_size => [275, 326],
+          :info => { 
+            :Title => "My title",
+            :Author => "John Doe",
+            :Subject => "My Subject",
+            :Keywords => "test metadata ruby pdf dry",
+            :Creator => "ACME Soft App",
+            :Producer => "Prawn",
+            :CreationDate => Time.now,
+            :Grok => "Test Property" 
+          }
+        }
+      end 
     end
   end
   
