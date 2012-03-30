@@ -46,20 +46,20 @@ You can also configure single PDF documents, by passing an hash to `pdf_options`
 
 ```ruby
 respond_to do |format|
-format.pdf do 
-	render :pdf => :contents, :pdf_options => { 
-	  :page_size => [275, 326],
-	  :info => { 
-	    :Title => "My title",
-	    :Author => "John Doe",
-	    :Subject => "My Subject",
-	    :Keywords => "test metadata ruby pdf dry",
-	    :Creator => "ACME Soft App",
-	    :Producer => "Prawn",
-	    :CreationDate => Time.now,
-	    :Grok => "Test Property" 
-	  }
-	}
+	format.pdf do 
+		render :pdf => :contents, :pdf_options => { 
+		  :page_size => [275, 326],
+		  :info => { 
+		    :Title => "My title",
+		    :Author => "John Doe",
+		    :Subject => "My Subject",
+		    :Keywords => "test metadata ruby pdf dry",
+		    :Creator => "ACME Soft App",
+		    :Producer => "Prawn",
+		    :CreationDate => Time.now,
+		    :Grok => "Test Property" 
+		  }
+		}
 	end 
 end
 ```
