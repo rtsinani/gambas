@@ -3,7 +3,7 @@ require "prawn"
 
 ActionController::Renderers.add :pdf do |filename, options|
   Gambas::PdfCreator.create (options[:pdf_options]) do |pdf|
-    eval render_to_string
+    instance_eval render_to_string
   end
 end
 

@@ -37,6 +37,7 @@ class HomeController < ApplicationController
   
   def page_size
     @custom_size = [275, 326]
+    render_pdf
   end
   
   def render_pdf
